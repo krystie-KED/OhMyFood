@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <script src="https://kit.fontawesome.com/3800f1a1a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
+            <form action=""><!--à tgerme on pourra choisir sa localisation-->
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" method="get" placeholder="Paris,Belleville">
+            </form>
+        </header>
+        <section>
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionés par nos soins.</p>
+            <button>Explorer nos restaurants</button>
+        </section>
+
+        <section>
+            <h2>Fonctionnement</h2>
+            <div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+        </section>
+
+        <section><!--chacune des vignettes renvoie vers la page resto-->
+            <h2>Restaurants</h2>
+            <!--**********************  VIGNETTE 1  ***********************-->
+            <a href="./menu_la_palette_du_gout.html"><!--Vignette cliquable-->
+                <div class="bloc-blanc"> <!--bloc blanc-->
+                    <div  class="bloc-image"><!--bloc image-->
+                        <div>Nouveau</div>
+                        <img src="" alt="La palette du goût" class="image-carre">
+                    </div>
+                    <div><!--Descriptif-->    
+                        <h3>La palette du goût</h3><!--nom restaurant-->
+                        <p>Ménilmontant</p><!--Lieu--> 
+                        <i class="fa-thin fa-heart"></i>
+                    </div>                          
+                </div>
+            </a>
+            <!--**********************  VIGNETTE 2  ***********************-->
+            <a href="./menu_la_note_enchantee.html"><!--Vignette cliquable-->
+                <div class="bloc-blanc"> <!--bloc blanc-->
+                    <div  class="bloc-image"><!--bloc image-->
+                        <div>Nouveau</div>
+                        <img src="" alt="La note enchantée" class="image-carre">
+                    </div>
+                    <div><!--Descriptif-->    
+                        <h3>La note enchantée/h3><!--nom restaurant-->
+                        <p>Charonne</p><!--Lieu--> 
+                        <i class="fa-thin fa-heart"></i>
+                    </div>                          
+                </div>
+            </a>
+            <!--**********************  VIGNETTE 3  ***********************-->
+            <a href="./menu_a_la_francaise.html"><!--Vignette cliquable-->
+                <div class="bloc-blanc"> <!--bloc blanc-->
+                    <div  class="bloc-image"><!--bloc image-->
+                        <img src="" alt="À la française" class="image-carre">
+                    </div>
+                    <div><!--Descriptif-->    
+                        <h3>À la française</h3><!--nom restaurant-->
+                        <p>Cité Rouge</p><!--Lieu--> 
+                        <i class="fa-thin fa-heart"></i>
+                    </div>                          
+                </div>
+            </a>
+            <!--**********************  VIGNETTE 4  ***********************-->
+            <a href="./menu_les_delices_des_sens.html"><!--Vignette cliquable-->
+                <div class="bloc-blanc"> <!--bloc blanc-->
+                    <div  class="bloc-image"><!--bloc image-->
+                        <img src="" alt="Le délice des sens" class="image-carre">
+                    </div>
+                    <div><!--Descriptif-->    
+                        <h3>Le délice des sens</h3><!--nom restaurant-->
+                        <p>Folie-Méricou</p><!--Lieu--> 
+                        <i class="fa-thin fa-heart"></i>
+                    </div>                          
+                </div>
+            </a>
+        </section>
+
+        <footer><!--identique sur toutes les pages-->
+            <div>
+                <img src="./images/logo/ohmyfood.png" alt="Logo">
+                <ul>
+                    <li><i class="fa-solid fa-utensils"></i><a href="">Proposer un restaurant</a></li>
+                    <li><i class="fa-solid fa-handshake-angle"></i><a href="">Devenir partenaire</a></li>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Contact</a></li><!--clique renvoie vers une adresse mail-->
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
