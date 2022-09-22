@@ -1,0 +1,63 @@
+.functioning{
+    height: 350px;
+    background-color: $white;
+    padding: 5%;
+
+
+    &-block{ 
+        margin: auto;
+        width: 95%; 
+    }
+    &-element{
+        display: flex;
+        position: relative;
+    }
+    
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bkcolor-functioning;
+        width: $full-width;
+        height: 50px;
+        margin-bottom: $margin-bottom;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+    &-number{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 12px;
+        left: -10px;
+        background-color: $color-primary;
+        color: $white;
+        padding-top: 2px;
+        text-align: center;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+}
+}
+i{
+    width: 10%;  
+}
+.fa-mobile-screen-button,.fa-list{
+    color: $icon-color;
+}
+p{
+    width: 70%;
+}
+
+.active{
+    background-color: $bkcolor-functiong--active;
+    .fa-store{
+        color: $color-primary;
+    }
+}

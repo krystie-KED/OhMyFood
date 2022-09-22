@@ -1,0 +1,74 @@
+.restaurant-thumbnail{
+padding: 5%;
+
+}
+.restaurant-thumbnail > a{
+    text-decoration: none;
+    color: $color-typography;
+}
+
+.thumbnail{
+    margin: auto;
+    width: $full-width;
+    height: 200px;
+    background-color: $white;
+    margin-bottom: $margin-bottom;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    &-image{
+        position: relative;
+    }
+    &-descriptif{
+        display: flex;
+    }
+    &-descriptif--element{
+        margin: 4%;
+    }
+    
+}
+.image-carre{
+    width: $full-width;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+.like{
+    width: 20%;
+    margin-top: 4%;
+    position: relative;
+    i{
+        width: 10%;
+        font-size: 20pt;
+    }
+    .fa-regular{
+        font-size: 20pt;
+        &:hover{
+            opacity: 0;
+        }
+    }
+    .fa-solid{
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+         background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+         background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         &:hover{
+            opacity: 1;
+         }
+     }
+    .fa-heart{
+        width: 30px;
+    }
+}
+

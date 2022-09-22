@@ -1,0 +1,15 @@
+.location-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $bkcolor-location;
+    .fa-solid{
+        width: 5%;
+    }
+    input{
+        border: none;
+        background-color: transparent;
+        width: 30%;
+    }
+}

@@ -1,0 +1,57 @@
+.restaurant-name{
+    display: flex;
+    width: $full-width;
+    padding-top: 5%;
+}
+.container-menu--card{
+    width: 94%;
+    margin: 3%;
+}
+.container-category{
+    margin-top: 5%;
+}
+
+.thumbnail-food{
+    display: flex;
+    width: $full-width;
+    height: 60px;
+    padding: 0px 10px 0px 10px;
+    background-color: $white;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation: fadeIn 0.8s linear infinite;
+    -webkit-animation: fadeIn 0.8s linear infinite;
+}
+.description-food{   
+    margin-top: 2%;
+
+    &-element{
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        width: 10%;
+        font-size: 11pt;
+        font-weight: 300;
+    }
+    .accompagnement{
+        width: 200px;
+        white-space : nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        
+    }        
+    .price{
+        font-weight: 800;
+    }
+}
+
+
+.order{
+    margin: 10% 0% 15% 20%;
+}

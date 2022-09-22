@@ -1,0 +1,49 @@
+.bloc-cheked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    width: 15%;
+    background-color: $color-tertiary;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -ms-border-radius: 0px 10px 10px 0px;
+    -o-border-radius: 0px 10px 10px 0px;
+    
+
+
+    .hover-selection{
+                display: flex;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                background-color: $white;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px; 
+}
+    .hover-selection .fa-check{
+        color: $color-tertiary;
+        padding-left: 2px;
+        
+    }  
+}
+
+.bloc-cheked:hover{
+  }
+  
+ /* @keyframes fadeinchecked {
+    0% {
+      width: 0%;
+    
+    }
+
+    100% {
+      width: 15%;
+
+    }
+  }*/
+  

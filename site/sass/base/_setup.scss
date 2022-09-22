@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: $full-width;
+}
+body{
+    width: $full-width;
+    margin: auto;
+    flex-direction: column;
+    font-family: $roboto-font;
+    background-color: $bkcolor-site;
+}
+.container{
+    margin: auto;
+    max-width: 768px;
+    width: $full-width;
+}

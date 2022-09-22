@@ -1,0 +1,29 @@
+footer{
+    width: $full-width;
+    height: 200px;
+    background-color: $bkcolor-footer;
+    padding: 5%;
+    margin-top: auto;
+    
+    .footer-container{
+        width: $full-width;
+        max-width: 768px;
+        color: $white;
+    }
+        .footer-container__heading{
+            font-family: $shrikhand-font;
+            padding: 15px 0px 15px 0px;
+        }
+    .footer-container>ul li{
+        display: flex;
+        list-style: none;
+        padding-bottom: 4px;
+    }
+    .footer-container a{
+        text-decoration: none;
+        color: $white;
+    }
+    .footer-container i{
+        width: 8%;
+    }
+}

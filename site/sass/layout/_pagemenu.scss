@@ -1,0 +1,18 @@
+.container-menu{
+    margin-top:50%;
+    background-color: $bkcolor-site;
+    border-radius: 50px 50px 0px 0px;
+    -webkit-border-radius: 50px 50px 0px 0px;
+    -moz-border-radius: 50px 50px 0px 0px;
+    -ms-border-radius: 50px 50px 0px 0px;
+    -o-border-radius: 50px 50px 0px 0px;
+}
+.container-menu--image{
+    position: relative;
+    
+    img{
+        position: absolute;
+        z-index: -1;
+        top: -210px;
+    }
+}

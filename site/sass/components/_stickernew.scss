@@ -1,0 +1,23 @@
+@mixin text-sticker ($colour){
+    color: darken($colour, 40%);   
+}
+.sticker{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 90px;
+    height: 30px;
+    color: $color-tertiary;
+    background-color: $color-tertiary;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+
+    @include text-sticker($color-tertiary);
+}

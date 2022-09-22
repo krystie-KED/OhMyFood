@@ -1,0 +1,17 @@
+.presentation{
+    padding: 10%;
+    text-align: center;
+    font-size: $title-size;
+    height: 300px;
+    h1{
+        padding-bottom: $padding-bottom;
+    }
+    p{
+        font-weight: 300;
+        padding-bottom: $padding-bottom;
+        margin: auto;
+    }
+    button{
+        margin-top: $margin-bottom;
+    }
+}

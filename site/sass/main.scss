@@ -1,0 +1,20 @@
+//import dans cet ordre utils, base, components, layout
+@import "./utils/variables";
+@import "./base/fonts";
+@import "./base/setup";
+@import "./base/title";
+@import "./components/btn-gradient";
+@import "./components/stickernew";
+@import "./components/thumbnail";
+@import "./components/checked";
+@import "./layout/overlay";
+@import "./layout/fadein";
+@import "./layout/header";
+@import "./layout/location";
+@import "./layout/presentation";
+@import "./layout/functioning";
+@import "./layout/header-page";
+@import "./layout/pagemenu";
+@import "./layout/menu";
+@import "./layout/footer";
+
