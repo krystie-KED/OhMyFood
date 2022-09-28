@@ -4,6 +4,8 @@
     align-items: center;
     height: 50px;
     background-color: $bkcolor-location;
+    box-shadow: inset 0px 15px 10px -15px rgba(0, 0, 0, .5);    
+    
     .fa-solid{
         width: 5%;
     }

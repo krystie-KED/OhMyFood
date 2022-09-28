@@ -50,7 +50,13 @@ h3 + p {
   margin-bottom: 3%;
 }
 
-.btn-gradient {
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.order .btn-gradient {
+  margin: 5%;
   color: #FFF;
   font-weight: 800;
   font-size: 11pt;
@@ -59,7 +65,6 @@ h3 + p {
   height: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: auto;
   border-radius: 35px;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
@@ -67,9 +72,9 @@ h3 + p {
   -o-border-radius: 35px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.btn-gradient:hover {
+.order .btn-gradient:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  background-color: white;
+  opacity: 0.9;
 }
 
 .sticker {
@@ -93,6 +98,7 @@ h3 + p {
 
 .restaurant-thumbnail {
   padding: 5%;
+  height: 1050px;
 }
 
 .restaurant-thumbnail > a {
@@ -153,10 +159,17 @@ h3 + p {
   position: absolute;
   left: 0px;
   opacity: 0;
-  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  background-clip: text;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text; /*attache le background au texte*/
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
 }
 .like .fa-solid:hover {
   opacity: 1;
@@ -169,7 +182,7 @@ h3 + p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -10px;
+  margin-right: -110px; /* passer la checkbox en dehors*/
   width: 15%;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
@@ -195,17 +208,6 @@ h3 + p {
   padding-left: 2px;
 }
 
-/* @keyframes fadeinchecked {
-   0% {
-     width: 0%;
-
-   }
-
-   100% {
-     width: 15%;
-
-   }
- }*/
 .overlay {
   z-index: 100;
   left: 0;
@@ -280,12 +282,24 @@ h3 + p {
   }
 }
 .fade-in {
-  animation-name: fadein;
-  animation-duration: 3s;
-  transition-timing-function: linear;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  animation-delay: 250ms;
 }
 
-@keyframes fadein {
+.fade-in-plat {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  animation-delay: 2s;
+}
+
+.fade-in-dessert {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(5px);
@@ -296,25 +310,19 @@ h3 + p {
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
   }
 }
-.thumbnail-food {
-  animation: fadein 0.8s linear infinite;
-  -webkit-animation: fadein 0.8s linear infinite;
-}
-
 header {
   width: 100%;
+  max-width: 768px;
 }
 
 .site-header {
-  width: 100%;
-  max-width: 768px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,6 +339,7 @@ header {
   align-items: center;
   height: 50px;
   background-color: #EAEAEA;
+  box-shadow: inset 0px 15px 10px -15px rgba(0, 0, 0, 0.5);
 }
 .location-form .fa-solid {
   width: 5%;
@@ -349,18 +358,19 @@ header {
 }
 .presentation h1 {
   padding-bottom: 5%;
+  font-size: 1.7em;
 }
 .presentation p {
   font-weight: 300;
   padding-bottom: 5%;
-  margin: auto;
+  width: 100%;
 }
 .presentation button {
   margin-top: 5%;
 }
 
 .functioning {
-  height: 350px;
+  height: 400px;
   background-color: #FFF;
   padding: 5%;
 }
@@ -378,7 +388,7 @@ header {
   align-items: center;
   background-color: #F6F6F6;
   width: 100%;
-  height: 50px;
+  height: 60px;
   margin-bottom: 5%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -391,11 +401,11 @@ header {
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 12px;
+  top: 20px;
   left: -10px;
   background-color: #9356DC;
   color: #FFF;
-  padding-top: 2px;
+  padding-top: 3px;
   text-align: center;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -414,10 +424,11 @@ i {
 
 p {
   width: 70%;
+  font-weight: 500;
 }
 
 .active {
-  background-color: rgba(147, 86, 220, 0.1);
+  background-color: rgba(147, 86, 220, 0.2);
 }
 .active .fa-store {
   color: #9356DC;
@@ -446,6 +457,7 @@ p {
 
 .container-menu {
   margin-top: 50%;
+  height: auto;
   background-color: #F2F2F2;
   border-radius: 50px 50px 0px 0px;
   -webkit-border-radius: 50px 50px 0px 0px;
@@ -465,8 +477,12 @@ p {
 
 .restaurant-name {
   display: flex;
+  justify-content: baseline;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 10%;
+}
+.restaurant-name .fa-heart {
+  font-size: 1.6em;
 }
 
 .container-menu--card {
@@ -482,17 +498,39 @@ p {
   display: flex;
   width: 100%;
   height: 60px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 10px;
   background-color: #FFF;
   margin-bottom: 5%;
+  overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  animation: fadeIn 0.8s linear infinite;
-  -webkit-animation: fadeIn 0.8s linear infinite;
+}
+.thumbnail-food:hover .bloc-cheked {
+  visibility: visible;
+  margin-right: -10px;
+  transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -ms-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+}
+.thumbnail-food:hover .fa-sharp {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform-origin: right;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition-delay: 350ms;
 }
 
 .description-food {
@@ -515,10 +553,6 @@ p {
 }
 .description-food .price {
   font-weight: 800;
-}
-
-.order {
-  margin: 10% 0% 15% 20%;
 }
 
 footer {
