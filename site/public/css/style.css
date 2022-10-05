@@ -198,6 +198,7 @@ h3 + p {
   height: 20px;
   background-color: #FFF;
   border-radius: 20px;
+  transform-origin: right;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
