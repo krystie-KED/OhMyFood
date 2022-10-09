@@ -85,7 +85,7 @@
         margin: 0;
         margin: auto;
         min-width: 961px;
-        max-width: 1840px;
+        max-width: 2700px;
         width: 100%;
     }
     .header-desktop{
@@ -96,7 +96,8 @@
         background-color: #FFF;
     }
     .site-header{
-        justify-content: center;
+        justify-content: left;
+        margin-left: 2%;
         padding: 20px;
     }
     .site-header img{
@@ -105,16 +106,17 @@
 
     .header-page{
         min-width: 961px;
-        max-width: 1840px;
+        max-width: 2700px;
         height: 100px;
         width: 100%;
     }
+    
     .location-form{
         width: 100%;
          height: 60px;
         box-shadow: none;
         background-color: #FFF;
-        justify-content: center;
+        justify-content: flex-end;
         padding-top: 5px;
     }
     h2 {
@@ -149,6 +151,7 @@
     }
     .restaurant-thumbnail > a {
         width: 50%;
+        height: 300px;
     }
     .image-carre {
         height: 200px;
@@ -182,9 +185,15 @@
     }
     .fa-arrow-left{
         font-size: 1.6em;
+        margin-left: 30%;
     }
     .container-menu {
         margin-top: 30%;
+    }
+    .container-menu--card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .container-menu--image img {
         top: -480px;
@@ -192,14 +201,19 @@
     .restaurant-name h1{
         font-size: 2em;
     }
+    .container-category {
+        width: 32%;
+    }
     .thumbnail-food{
-        width: 80%;
+        width: 100%;
         margin-bottom: 2%;
         height: 80px;
     }
     .bloc-cheked {
-        margin-right: -200px;
+        margin-right: -500px;
     }
-    
+    .bloc-cheked .hover-selection {
+        margin-right: 25%;
+    }
   
 }

@@ -29,6 +29,12 @@
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+        &:hover{
+            background-color: $bkcolor-functiong--active;
+            .fa-solid{
+                color: $color-primary;
+            }
+        }
 }
     &-number{
         width: 25px;
@@ -58,9 +64,3 @@ p{
     font-weight: 500;
 }
 
-.active{
-    background-color: $bkcolor-functiong--active;
-    .fa-store{
-        color: $color-primary;
-    }
-}
