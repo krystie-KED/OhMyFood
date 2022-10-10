@@ -55,14 +55,15 @@ height: 1050px;
  .like i{
     width: 100%;
     height: 30px;
+    margin-left: 1%;
 }
-
 
 .fa-heart {
     font-size: 20pt;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+
 }
 
 
@@ -76,30 +77,34 @@ height: 1050px;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         
-    }   
+}   
     .fa-heart {
         font-size: 20pt;
         color: white;
         -webkit-text-stroke-width: 0px;
         -webkit-text-stroke-color: transparent;
-    }
-
+       
+}           
 }
+
+
 #btnControl2:checked + label > div{
     .fa-solid{
         font-size: 20pt;
         background: -webkit-linear-gradient($color-primary,$color-secondary);
         background: linear-gradient($color-primary,$color-secondary);
-        background-clip: text;/*attachelebackgroundautexte*/
-        -webkit-background-clip: text;
+        background-clip: text;
+        /*attachelebackgroundautexte*/-webkit-background-clip: text;
         -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;      
-    }    
+        -webkit-text-fill-color: transparent;
+ 
+}    
     .fa-heart {
         font-size: 20pt;
         color: white;
         -webkit-text-stroke-width: 0px;
         -webkit-text-stroke-color: transparent;
+        
     }
 }
 #btnControl3:checked + label > div{
